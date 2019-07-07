@@ -1,3 +1,7 @@
+$light: #f8f9fa;
+$danger: #dc3545;
+$dark_gray: #767676;
+$shadow: rgba(0, 0, 0, 0.16);
 /*----------ResetCSS----------*/
 
 html, body, div, span, applet, object, iframe,
@@ -44,25 +48,6 @@ table {
 	border-spacing: 0;
 }
 
-input[type="submit"],
-input[type="button"] {
-  border-radius: 0;
-  -webkit-box-sizing: content-box;
-  -webkit-appearance: button;
-  appearance: button;
-  border: none;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-input[type="submit"]::-webkit-search-decoration,
-input[type="button"]::-webkit-search-decoration {
-  display: none;
-}
-input[type="submit"]::focus,
-input[type="button"]::focus {
-  outline-offset: -2px;
-}
-
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -73,6 +58,7 @@ select {
 }
 
 button,
+input,
 input[type="submit"] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -102,7 +88,27 @@ html{
 .container{
     margin:0 auto;
 }
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+    &::-webkit-search-decoration {
+      display: none;
+    }
+    &::focus {
+      outline:0;
+    }
+}
 
+/*----------TopAd------------*/
+.adSection{
+  height:20rem;
+  background-color:yellow;
+}
 
 /*----------Header-----------*/
 .header{
@@ -132,8 +138,20 @@ html{
   align-items: center;
 }
 
+.SearchBar{
+  border:.1rem solid $dark_gray;
+  border-radius:.5rem;
+  padding:1rem;
+}
+
 .Store-i{
   width:20rem;
+}
+
+.search-i{
+  border:none;
+  cursor:pointer;
+  padding:.5rem 1rem;
 }
 
 
