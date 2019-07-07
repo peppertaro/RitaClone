@@ -22,7 +22,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -75,19 +75,7 @@ input[type="radio"] {
 input[type="radio"]:checked + label {
     background: #ff0000;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-/*----------General-----------*/
-html{
-    font-size:62.5%;
-}
-.container{
-    margin:0 auto;
-}
 input[type="submit"],
 input[type="button"] {
   border-radius: 0;
@@ -102,6 +90,37 @@ input[type="button"] {
     &::focus {
       outline:0;
     }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color:#fff;
+}
+/*----------General-----------*/
+html{
+    font-size:62.5%;
+    font-family: sans-serif;
+}
+.container{
+    margin:0 auto;
+}
+
+.link-item{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 /*----------TopAd------------*/
@@ -128,7 +147,11 @@ input[type="button"] {
 }
 
 .hd-i{
-    margin:.5rem;
+    margin:.5rem 1rem;
+}
+
+.h_item{
+  padding:.8rem;
 }
 
 /*----------SearchBar----------*/
@@ -154,6 +177,43 @@ input[type="button"] {
   padding:.5rem 1rem;
 }
 
+/*---------ProductType---------*/
+.ProdTypes{
+  display:flex;
+}
+
+.PT-img-box{
+  position:relative;
+  text-align:center;
+  margin:2%;
+  width:percentage(1/7);
+}
+
+.PTfa{
+  font-size:5rem;
+}
+
+.PT-info{
+  width:100%;
+}
+
+
+
+.PT-name{
+  font-size:1rem;
+  padding:1rem .5rem; 
+}
+
+.PT-title{
+  text-align:center;
+}
+
+.PT-link{
+  &:hover{
+    transition:.2s;
+    color:yellow;
+  }
+}
 
 /*---------Responsive----------*/
 @media (min-width: 576px) {
