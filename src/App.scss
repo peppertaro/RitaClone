@@ -246,7 +246,7 @@ svg {
   position:relative;
   text-align:center;
   margin:2%;
-  width:percentage(1/7);
+  width:percentage(1/3);
 }
 
 .PT-img{
@@ -276,9 +276,54 @@ svg {
   }
 }
 
-/*----------NewProducts--------*/
+/*----------Category--------*/
+.CateTypes{
+  display:flex;
+}
+
+.CateType{
+  position: relative;
+  width:percentage(1/3);
+  border:.1rem solid #aaaaaa;
+}
+
+.CT-img-box{
+  display:flex;
+  width:15rem;
+}
+.CT-infos{
+  padding:5% 5rem;
+}
+
+.CT-img{
+  margin:0 auto;
+  width:20rem;
+  height:15rem;
+  object-fit:cover;
+}
 
 
+.CT-info{
+  width:100%;
+}
+
+
+
+.CT-name{
+  font-size:1rem;
+  padding:1rem .5rem; 
+}
+
+.CT-title{
+  text-align:center;
+}
+
+.CT-link{
+  &:hover{
+    transition:.2s;
+    color:yellow;
+  }
+}
 
 /*---------Responsive----------*/
 @media (min-width: 576px) {

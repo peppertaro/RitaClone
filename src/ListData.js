@@ -81,6 +81,99 @@ const ProdTypeList = [
     }
   ];
 
+  const CategoryList = [
+    {
+        CTkey: 401,
+        PTimg: "./svg/Bed.svg",
+        CTindex: 0,
+        CTname:"ベッド",
+        CTtitle: "BED",
+        CTlink: "#bed",
+        CTimg:"./img/bed2.jpg"
+    },
+    {
+        CTkey: 402,
+        PTimg: "./svg/Sofa.svg",
+        CTindex: 1,
+        CTname:"ソファ",
+        CTtitle: "SOFA",
+        CTlink: "#sofa",
+        CTimg: "./img/sofa_n1.jpg"
+    },
+    {
+        CTkey: 403,
+        PTimg: "./svg/TV_Stand.svg", 
+        CTindex: 2,
+        CTname:"テレビ台",
+        CTtitle: "TV Stand",
+        CTlink: "#tv",
+        CTimg: "./img/tv_stand1.jpg"     
+    },
+    {
+        CTkey: 404,
+        PTimg: "./svg/Chair.svg",
+        CTindex: 3,
+        CTname:"チェア",
+        CTtitle: "CHAIR",
+        CTlink: "#chair",
+        CTimg: "./img/chair1.jpg"
+    },
+    {
+        CTkey: 405,
+        PTimg: "./svg/Kitchen.svg",
+        CTindex: 4,
+        CTname:"キッチン収納",
+        CTtitle: "KITCHEN CABINET",
+        CTlink: "#kitchen",
+        CTimg: "./img/kitchen1.jpg"
+    },
+    {
+        CTkey: 406,
+        PTimg: "./svg/Cabinet.svg",
+        CTindex: 5,
+        CTname:"収納家具",
+        CTtitle: "CABINET",
+        CTlink: "#cabinet",
+        CTimg: "./img/shelf.jpg"
+    },
+    {
+        CTkey: 407,
+        PTimg: "./svg/Dining.svg",
+        CTindex: 6,
+        CTname:"ダイニング",
+        CTtitle: "DINING",
+        CTlink: "#dining",
+        CTimg: "./img/dining1.jpg"
+    },
+    {
+        CTkey: 408,
+        PTimg: "./svg/Desk.svg",
+        CTindex: 7,
+        CTname:"デスク",
+        CTtitle: "Desk",
+        CTlink: "#desk",
+        CTimg: "./img/desk2.jpg"
+    },
+    {
+        CTkey: 409,
+        PTimg: "./svg/Mirror.svg",
+        CTindex: 8,
+        CTname:"ミラー・ドレッサー",
+        CTtitle: "Mirror",
+        CTlink: "#mirror",
+        CTimg: "./img/mirror.jpg"
+    },
+    {
+        CTkey: 410,
+        PTimg: "./svg/Rug.svg",
+        CTindex: 9,
+        CTname:"ラグ",
+        CTtitle: "Rug",
+        PTlink: "#rug",
+        CTimg: "./img/rug1.jpg"
+    }
+  ];
+
 const NewProdList= [
     {
         NPkey:201,
@@ -214,4 +307,4 @@ const RecommendList= [
         RDlink:"#rug"
     },
 ];
-  export{ProdTypeList,NewProdList,RecommendList};
+  export{ProdTypeList,CategoryList,NewProdList,RecommendList};

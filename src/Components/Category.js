@@ -1,16 +1,20 @@
 import React from "react";
-import {ProdTypeList} from "../ListData";
-import ProdTypeBox from "../Templates/Prod_type_Box";
+import {CategoryList} from "../ListData";
+import CateTypeBox from "../Templates/Cate_Type_Box";
 class Category extends React.Component {
     render() { 
         return ( 
-            <div className="ProdTypeSection">
+            <div className="CateTypeSection">
                 <div className="container">
-                    <div className="ProdTypes">
-                        {ProdTypeList.map(ProdTypeList => (
-                            <ProdTypeBox
-                                key={ProdTypeList.PTkey}
-                                ProdTypeList={ProdTypeList}
+                    <div className="Info">
+                        <h3 className="Title">CATEGORY</h3>
+                        <p className="Title_JP">カテゴリー</p>
+                    </div>
+                    <div className="CateTypes Slides">
+                        {CategoryList.map(CategoryList => (
+                            <CateTypeBox
+                                key={CategoryList.CTkey}
+                                CategoryList={CategoryList}
                             />
                         ))}
                     </div>
