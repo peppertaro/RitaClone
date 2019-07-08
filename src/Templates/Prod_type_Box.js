@@ -1,11 +1,11 @@
 import React from "react";
 
 const ProdTypeBox = ({ ProdTypeList }) => {
-  const { PTindex, PTfa, PTname, PTtitle, PTlink } = ProdTypeList;
+  const { PTindex, PTimg, PTname, PTtitle, PTlink } = ProdTypeList;
   return (
     <div id={`PTcard-${PTindex}`} className="PT-img-box">
       <div className="PT-info">
-        <i className={`PTfa ${PTfa}`} ></i>
+        <img className="PT-img" src={PTimg} alt=""/>
         <p className="PT-name">{PTname}</p>
       </div>
       <h3 className="PT-title">{PTtitle}</h3>
