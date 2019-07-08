@@ -6,6 +6,7 @@ import ProdType from './Components/Prod_type';
 import AdSlider from './Components/AdSlider';
 import NewProd from './Components/New_Prod';
 import Recommend from './Components/Recommend';
+import Category from './Components/Category';
 class App extends React.Component {
   render() { 
     return ( 
@@ -20,6 +21,7 @@ class App extends React.Component {
         <AdSlider />
         <NewProd />
         <Recommend />
+        <Category />
       </div>
     );
   }
