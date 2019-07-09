@@ -373,22 +373,110 @@ svg {
 }
 
 /*--------Corporate------------*/
+
+
 .Corporate{
   margin: 10% 0;
 }
 
-.corpName{
+.corpName,.corpTitle{
   padding:2rem 0;
   font-size:1.4rem;
 }
 
 .corpInfos{
-  padding:1rem 0;
+  padding:1rem;
 }
 
 .corpInfo{
   padding:.5rem;
   font-size:1.2rem;
+}
+
+.corpCalendars{
+  display:flex;
+}
+
+.corpCalendar{
+  width:50%;
+  padding:2%;
+}
+
+/*--------Corporate Customer-----------*/
+.CorpCustomer{
+  display:flex;
+  padding:3rem 1rem;
+}
+
+.corpInfo-box{
+  display:flex;
+  justify-content: space-around;
+  padding:.8rem;
+}
+
+.corpMailInput{
+  display:inline-block;
+}
+
+.tel-i{
+  font-size:8rem;
+}
+
+.corpInfo{
+  padding:.8rem;
+}
+
+.corpTelNum{
+  font-size:3rem;
+  letter-spacing:.3rem;
+}
+
+.corpTelHour{
+  font-size:1.2rem;
+  padding:.5rem;
+}
+
+.corpTelQuery{
+  width:60%;
+  border-right:.2rem solid #eee;
+}
+
+.corpContMail{
+  width:40%;
+}
+
+.corpcaution{
+  font-size:1rem;
+  padding:.3rem;
+}
+
+
+.corpMailQuery{
+  padding:0 3rem;
+}
+.corpreg{
+  padding:0 2rem;
+}
+.mail-btn{
+  white-space: nowrap;
+  font-size:1.5rem;
+  margin:1rem 0;
+  background-color:#ff8665;
+  color:#fff;
+  border-radius: 2rem;
+  box-shadow:0 0 .9rem -.3rem #888; 
+  cursor:pointer;
+}
+
+.mail-btn:active{
+  box-shadow:none;
+}
+
+.corpInpMail{
+  width:90%;
+  border:.1rem solid #888;
+  padding:1rem;
+  margin:.5rem;
 }
 
 /*---------Responsive----------*/
@@ -402,12 +490,20 @@ svg {
     .container {
       max-width: 720px;
     }
+    .CorpSection{
+      width:100%;
+      padding:0 1%;
+    }
   }
 @media (min-width: 1170px) {
     .container {
       max-width: 1170px;
     }
-    .Corporate{
+    .Corporations{
+      display:flex;
+    }
+    .CorpSection{
       width:50%;
+      padding:1%;
     }
   }

@@ -8,7 +8,9 @@ import NewProd from './Components/New_Prod';
 import Recommend from './Components/Recommend';
 import Category from './Components/Category';
 import MailMagazine from './Components/MailMagazine';
-import Corporate from './Components/Corp'
+import Corporate from './Components/Corp';
+import CorpCalendar from './Components/CorpCalendar';
+import CorpCustomer from './Components/CorpCustomer';
 class App extends React.Component {
   render() { 
     return ( 
@@ -25,7 +27,13 @@ class App extends React.Component {
         <Recommend />
         <Category />
         <MailMagazine />
-        <Corporate />
+        <div className="container">
+          <div className="Corporations">
+            <Corporate />
+            <CorpCalendar />
+          </div>
+        </div>
+        <CorpCustomer />
       </div>
     );
   }

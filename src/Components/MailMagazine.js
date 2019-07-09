@@ -6,7 +6,7 @@ class MailMagazine extends React.Component {
                 <div className="container">
                     <div className="MailMagazineBox">
                         <div className="MM-infos">
-                            <i class="fas fa-envelope-open-text MM-i"></i>
+                            <i className="fas fa-envelope-open-text MM-i"></i>
                             <div className="MM-info">
                                 <h3 className="MM-title">MAIL MAGAZINE</h3>
                                 <p className="MM-dsc">こちらから無料のメルマガ登録が可能です</p>
