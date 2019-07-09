@@ -11,6 +11,7 @@ import MailMagazine from './Components/MailMagazine';
 import Corporate from './Components/Corp';
 import CorpCalendar from './Components/CorpCalendar';
 import CorpCustomer from './Components/CorpCustomer';
+import Footer from './Components/Footer';
 class App extends React.Component {
   render() { 
     return ( 
@@ -34,6 +35,7 @@ class App extends React.Component {
           </div>
         </div>
         <CorpCustomer />
+        <Footer />
       </div>
     );
   }

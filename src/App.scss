@@ -100,7 +100,6 @@ input[type="button"] {
 
 a{
   text-decoration: none;
-  color:#fff;
 }
 /*----------General-----------*/
 html{
@@ -227,6 +226,7 @@ svg {
 
 .h_item{
   padding:.8rem;
+  color:#fff;
 }
 
 /*----------SearchBar----------*/
@@ -479,25 +479,54 @@ svg {
   margin:.5rem;
 }
 
+/*----------Footer-------------*/
+.footer{
+  background-color:#fafafa;
+  font-weight:600;
+}
+.footer-box{
+  display:flex;
+  height:20rem;
+}
+
+.f-index-box{
+  width:percentage(1/4);
+}
+
+.f-title{
+  font-size:1.8rem;
+  padding:3rem 0;
+}
+
+.f-link{
+  color: #555;
+  display:block;
+  font-size:1.2rem;
+  padding:.8rem;
+}
+.f-link:hover{
+  text-decoration: underline;
+}
+
 /*---------Responsive----------*/
-@media (min-width: 576px) {
+@media (min-width: 57.6rem) {
     .container {
-      max-width: 540px;
+      max-width: 54rem;
     }
   }
   
-@media (min-width: 768px) {
+@media (min-width: 76.8rem) {
     .container {
-      max-width: 720px;
+      max-width: 72rem;
     }
     .CorpSection{
       width:100%;
       padding:0 1%;
     }
   }
-@media (min-width: 1170px) {
+@media (min-width: 117rem) {
     .container {
-      max-width: 1170px;
+      max-width: 117rem;
     }
     .Corporations{
       display:flex;
