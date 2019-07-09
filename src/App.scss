@@ -141,7 +141,7 @@ svg {
 
 .Slide-element{
   position: relative;
-  width:25%;
+
 }
 
 .Slide-img-box{
@@ -213,6 +213,7 @@ svg {
 .header-box{
     display:flex;
     justify-content:space-between;
+    white-space: nowrap;
     align-items: center;
 }
 
@@ -355,6 +356,7 @@ svg {
   top:50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  text-shadow:0 0 .5rem .3rem #eee;
 }
 
 .MM-title{
@@ -484,6 +486,7 @@ svg {
   background-color:#fafafa;
   font-weight:600;
 }
+
 .footer-box{
   display:flex;
   height:20rem;
@@ -513,21 +516,91 @@ svg {
     .container {
       max-width: 54rem;
     }
+    .MM-infos{
+      left:50%;    
+    }
+    .CateType{
+      width:100%;
+    }
+    .Slide-element{
+      width:100%;
+      text-align:center;
+    }
+    .Slide-info{
+      text-align:left;
+      padding:0 1.5rem;
+    }
+    .Slide-img{
+     width:100%; 
+    }
+    .f-index-box{
+      width:percentage(1/3);
+    }
   }
   
 @media (min-width: 76.8rem) {
     .container {
       max-width: 72rem;
     }
+    
+    .MM-infos{
+      left:50%;
+      z-index:5;
+    }
+    .CT-infos{
+      padding:2% 3rem;
+    }
+
+    .MM-img{
+      opacity:.6;
+    }
+    .CateType{
+      width:percentage(1/2)
+    }
+
+    .Slide-element{
+      width:50%;
+      text-align:center;
+    }
+    .Slide-info{
+      text-align:center;
+    }
+    .Slide-img{
+      width:25rem; 
+     }
     .CorpSection{
       width:100%;
       padding:0 1%;
+    }
+    .f-index-box{
+      width:percentage(1/4);
     }
   }
 @media (min-width: 117rem) {
     .container {
       max-width: 117rem;
     }
+    .MM-infos{
+      left:25%;
+    }
+    .MM-img{
+      opacity:1;
+    }
+
+    .CT-infos{
+      padding:5% 6rem;
+    }
+    .CateType{
+      width:percentage(1/3)
+    }
+    .Slide-element{
+      width:25%;
+      text-align:left;
+    }
+    .Slide-info{
+      text-align:left;
+    }
+
     .Corporations{
       display:flex;
     }
