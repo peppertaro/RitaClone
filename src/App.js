@@ -8,6 +8,7 @@ import NewProd from './Components/New_Prod';
 import Recommend from './Components/Recommend';
 import Category from './Components/Category';
 import MailMagazine from './Components/MailMagazine';
+import Corporate from './Components/Corp'
 class App extends React.Component {
   render() { 
     return ( 
@@ -24,6 +25,7 @@ class App extends React.Component {
         <Recommend />
         <Category />
         <MailMagazine />
+        <Corporate />
       </div>
     );
   }

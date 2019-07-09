@@ -183,6 +183,20 @@ svg {
   font-size:2rem;
 }
 
+/*---------CorpTemplate------*/
+.CorpSection{
+  margin-top:5%;
+}
+
+.InfoTitle{
+  color:#fff;
+  background-color:#000;
+  padding:.5rem 2rem;
+  line-height:1.5rem;
+  border-radius:2rem;
+  font-size:1.5rem;
+}
+
 /*----------TopAd------------*/
 .adSection{
   height:20rem;
@@ -325,7 +339,7 @@ svg {
 /*---------MailMagazineAd------*/
 .MailMagazineBox{
   position: relative;
-  margin: 8rem 0;
+  margin-top: 8rem;
 }
 
 .MM-img{
@@ -358,6 +372,25 @@ svg {
   padding:3rem;
 }
 
+/*--------Corporate------------*/
+.Corporate{
+  margin: 10% 0;
+}
+
+.corpName{
+  padding:2rem 0;
+  font-size:1.4rem;
+}
+
+.corpInfos{
+  padding:1rem 0;
+}
+
+.corpInfo{
+  padding:.5rem;
+  font-size:1.2rem;
+}
+
 /*---------Responsive----------*/
 @media (min-width: 576px) {
     .container {
@@ -373,5 +406,8 @@ svg {
 @media (min-width: 1170px) {
     .container {
       max-width: 1170px;
+    }
+    .Corporate{
+      width:50%;
     }
   }
