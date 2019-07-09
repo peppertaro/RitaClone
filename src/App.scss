@@ -186,6 +186,7 @@ svg {
 /*----------TopAd------------*/
 .adSection{
   height:20rem;
+  text-align:center;
   background-color:yellow;
 }
 
@@ -258,8 +259,6 @@ svg {
   width:100%;
 }
 
-
-
 .PT-name{
   font-size:1rem;
   padding:1rem .5rem; 
@@ -307,8 +306,6 @@ svg {
   width:100%;
 }
 
-
-
 .CT-name{
   font-size:1rem;
   padding:1rem .5rem; 
@@ -323,6 +320,40 @@ svg {
     transition:.2s;
     color:yellow;
   }
+}
+
+/*---------MailMagazineAd------*/
+.MailMagazineBox{
+  position: relative;
+  margin: 8rem 0;
+}
+
+.MM-img{
+  width:100%;
+  height:30rem;
+  object-fit:cover;
+}
+
+.MM-infos{
+  display:flex;
+  position: absolute;
+  left:25%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.MM-title{
+  font-size:4rem;
+  padding:1rem;
+}
+.MM-dsc{
+  font-size:1.8rem;
+}
+
+.MM-i{
+  font-size:4rem;
+  padding:3rem;
 }
 
 /*---------Responsive----------*/
