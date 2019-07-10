@@ -454,7 +454,6 @@ svg {
   padding:.3rem;
 }
 
-
 .corpMailQuery{
   padding:0 3rem;
 }
@@ -514,9 +513,9 @@ svg {
 }
 
 /*---------Responsive----------*/
-@media (min-width: 57.6rem) {
+@media (min-width: 576px) {
     .container {
-      max-width: 54rem;
+      max-width: 540px;
     }
     .MM-infos{
       left:50%;
@@ -548,9 +547,9 @@ svg {
     }
   }
   
-@media (min-width: 76.8rem) {
+@media (min-width: 768px) {
     .container {
-      max-width: 72rem;
+      max-width: 720px;
     }
     
     .MM-infos{
@@ -589,9 +588,9 @@ svg {
       width:percentage(1/4);
     }
   }
-@media (min-width: 117rem) {
+@media (min-width: 1170px) {
     .container {
-      max-width: 117rem;
+      max-width: 1170px;
     }
     .MM-infos{
       left:25%;
