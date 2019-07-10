@@ -356,17 +356,18 @@ svg {
   top:50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-shadow:0 0 .5rem .3rem #eee;
 }
 
 .MM-title{
   font-size:4rem;
   font-weight:800;
   padding:1rem;
+  text-shadow:2px 2px 2px #18f05c;
 }
 .MM-dsc{
   font-size:1.8rem;
   padding:.5rem 1rem;
+  text-shadow:2px 2px 2px #18f05c;
 }
 
 .MM-i{
@@ -394,6 +395,7 @@ svg {
   padding:.5rem;
   font-size:1.2rem;
 }
+
 
 .corpCalendars{
   display:flex;
@@ -457,7 +459,6 @@ svg {
   padding:0 3rem;
 }
 .corpreg{
-  white-space: nowrap;
   padding:0 2rem;
 }
 .mail-btn{
@@ -468,6 +469,7 @@ svg {
   border-radius: 2rem;
   box-shadow:0 0 .9rem -.3rem #888; 
   cursor:pointer;
+  white-space: nowrap;
 }
 
 .mail-btn:active{
@@ -517,7 +519,15 @@ svg {
       max-width: 54rem;
     }
     .MM-infos{
-      left:50%;    
+      left:50%;
+      z-index:5;    
+    }
+    .MM-img{
+      opacity:.6;
+    }
+    .corpTelNum{
+      font-size:1.5rem;
+      font-weight:bold;
     }
     .CateType{
       width:100%;
@@ -550,7 +560,10 @@ svg {
     .CT-infos{
       padding:2% 3rem;
     }
-
+    .corpTelNum{
+      font-size:2rem;
+      font-weight:600;
+    }
     .MM-img{
       opacity:.6;
     }
@@ -586,7 +599,13 @@ svg {
     .MM-img{
       opacity:1;
     }
-
+    .corpTelNum{
+      font-size:3rem;
+      font-weight:700;
+    }
+    .corpInfo-card{
+      display:flex;
+    }
     .CT-infos{
       padding:5% 6rem;
     }
