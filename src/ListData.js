@@ -81,6 +81,52 @@ const ProdTypeList = [
     }
   ];
 
+
+  const AdSlideList =[
+    {
+        ASkey: 901,
+        ASindex:0, 
+        ASimg:"./img/sofa_n1.jpg", 
+        ASplace:"test", 
+        ASlink:"#NSofa"
+    },
+    {
+        ASkey: 902,
+        ASindex:1, 
+        ASimg:"./img/tv_stand1.jpg", 
+        ASplace:"test", 
+        ASlink:"#TVStand"
+    },
+    {
+        ASkey: 903,
+        ASindex:2, 
+        ASimg:"./img/shelf.jpg", 
+        ASplace:"Cabinet", 
+        ASlink:"#Cabinet"
+    },
+    {
+        ASkey: 904,
+        ASindex:3, 
+        ASimg:"./img/livingroom2.jpg", 
+        ASplace:"livingroom2", 
+        ASlink:"#livingroom2"
+    },
+    {
+        ASkey: 905,
+        ASindex:4, 
+        ASimg:"./img/mirror.jpg", 
+        ASplace:"mirror", 
+        ASlink:"#mirror"
+    },
+    {
+        ASkey: 906,
+        ASindex:5, 
+        ASimg:"./img/dining1.jpg", 
+        ASplace:"dining1", 
+        ASlink:"#dining1"
+    },
+  ]
+
   const CategoryList = [
     {
         CTkey: 401,
@@ -307,4 +353,4 @@ const RecommendList= [
         RDlink:"#rug"
     },
 ];
-  export{ProdTypeList,CategoryList,NewProdList,RecommendList};
+  export{ProdTypeList,AdSlideList,CategoryList,NewProdList,RecommendList};
