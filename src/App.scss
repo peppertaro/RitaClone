@@ -416,6 +416,31 @@ $i: 0;
   }
 }
 
+/*----------SideAd----------*/
+.ad-side-section{
+  display:flex;
+  flex-flow: row-reverse;
+  position:relative;
+}
+
+.ad-side-wrapper{
+  height:100%;
+}
+
+.Main{
+  position:absolute;
+  top:0;
+
+}
+
+.ad-side{
+  position: -webkit-sticky;
+  position: sticky;
+  top:5rem;
+  margin-top:23rem;
+  height:80rem;
+}
+
 
 /*----------Category--------*/
 .CateTypes{

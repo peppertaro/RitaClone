@@ -28,18 +28,23 @@ class App extends React.Component {
         <SearchBar />
         <ProdType />
         <AdSlider />
-        <NewProd />
-        <Recommend />
-        <Category />
-        <MailMagazine />
-        <div className="container">
-          <div className="Corporations">
-            <Corporate />
-            <CorpCalendar />
+        <div className="ad-side-section">
+          <img className="ad-side" src="./img/city-adS-1.jpg" alt="" />
+          <div className="ad-side-wrapper">
+            <NewProd />
+            <Recommend />
+            <Category />
+            <MailMagazine />
+            <div className="container">
+              <div className="Corporations">
+                <Corporate />
+                <CorpCalendar />
+              </div>
+            </div>
+            <CorpCustomer />
+            <Footer />
           </div>
         </div>
-        <CorpCustomer />
-        <Footer />
       </div>
     );
   }

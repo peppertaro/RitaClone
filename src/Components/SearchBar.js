@@ -18,7 +18,7 @@ class SearchBar extends React.Component {
                             <input type="hidden" name="sid" value="361620"/>
                             <input type="hidden" name="su" value="https://www.rakuten.ne.jp/gold/ritainc/" />
                             <input type="hidden" name="sn" value="ideart" />
-                            <input type="text" name="sitem" className="formtext"/> 
+                            <input type="text" name="sitem" className="formtext" autoComplete="off" /> 
                             <input type="hidden" name="f" value="A"/>
                         </form>
                     </div>
