@@ -7,7 +7,7 @@ class SearchBar extends React.Component {
                 <div className="container">
                     <div className="SearchBar-Box">
                         <a href="https://www.rakuten.ne.jp/gold/ritainc/"  target="_blank" rel="noopener noreferrer">
-                            <img className="Store-i" src="/logo.svg" alt="" />
+                            <img className="Store-i" src="/logo.png" alt="" />
                         </a>
 
                         <form method="get" className="SearchBar" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" target="_top" accept-charset="euc-jp">

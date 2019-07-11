@@ -298,6 +298,7 @@ $i: 0;
     color:rgba(0,0,0,0.3)
   }
 }
+
 /*---------CorpTemplate------*/
 .CorpSection{
   margin-top:5%;
@@ -316,7 +317,16 @@ $i: 0;
 .adSection{
   height:20rem;
   text-align:center;
-  background-color:yellow;
+}
+
+.ad-box{
+  position: relative;
+}
+
+.ad-top{
+  width:100%;
+  height:18rem;
+  object-fit: cover;
 }
 
 /*----------Header-----------*/

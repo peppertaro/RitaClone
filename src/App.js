@@ -17,8 +17,12 @@ class App extends React.Component {
     return ( 
       <div className="RootSection">
         <div className="adSection">
-          <img className="Store-i" src="/logo.svg" alt="" />
-          input add here
+          <div className="container">
+            <div className="ad-box">
+              <img className="ad-top" src="./img/city-adT-1.jpg" alt="" />
+              <a href="#thisisAd" className="link-item" alt="">#thisisAd</a>
+            </div>
+          </div>
         </div>
         <Header />
         <SearchBar />
