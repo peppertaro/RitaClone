@@ -287,11 +287,15 @@ svg {
   transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
+
 $i: 0;
 @for $i from 0 through 6 {
   .AScards-slider.active-slide-#{$i} #AScard-#{$i} {
     opacity: 0.9;
     transform: scale(1);
+  }
+  .AdDot-Section.active-slide-#{$i} #AdDot-#{$i} {
+    color:rgba(0,0,0,0.3)
   }
 }
 /*---------CorpTemplate------*/

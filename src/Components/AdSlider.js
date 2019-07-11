@@ -10,13 +10,21 @@ class AdSlider extends React.Component {
           adsdrList: AdSlideList,
           adsdr: AdSlideList[0]
         };
-      }
-    
+      }  
+
+      mvIndex = () => {
+        console.log(this)
+      };
+
+   
+
       Nextbtn = () => {
         const nextCard = this.state.adsdr.ASindex + 1;
-        this.state.adsdr.ASindex === this.state.adsdrList.length - 1
-          ? this.setState({ onClick: null })
-          : this.setState({ adsdr: this.state.adsdrList[nextCard] });
+        if(this.state.adsdr.ASindex === this.state.adsdrList.length - 1){
+           this.setState({ onClick: null })
+        }else{
+           this.setState({ adsdr: this.state.adsdrList[nextCard] });
+        }
       };
     
       Prevbtn = () => {
@@ -58,12 +66,18 @@ class AdSlider extends React.Component {
                             </button>
                         </div>
                         <div className="AdSlide-dots">
-                            <ul className="AdDot-Section">
+                            <ul className={`AdDot-Section active-slide-${this.state.adsdr.ASindex}`}>
                                 {AdSlideList.map(AdSlideList => (
-                                    <li key={AdSlideList.ASdot} className="AdDot" id={`AdDot-${AdSlideList.ASindex}`}><i className="fas fa-circle"></i></li>
+                                    <li key={AdSlideList.ASdot} 
+                                        className="AdDot" 
+                                        id={`AdDot-${AdSlideList.ASindex}`}
+                                        onClick={()=>this.mvIndex()}
+                                    >
+                                        <i className="fas fa-circle"></i>
+                                    </li>
                                 ))}
                             </ul>
-                            <div className="AdDisplayToggle">
+                            <div className="AdDisplayToggle" >
                                 表示切替<i className="fas fa-th menu-i"></i>
                             </div>
                         </div>
