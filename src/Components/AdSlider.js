@@ -2,7 +2,6 @@ import React from 'react';
 import {AdSlideList} from "../ListData";
 import AdSlideBox from "../Templates/Ad_Slide_Box";
 
-
 class AdSlider extends React.Component {
     constructor(props) {
         super(props);
@@ -12,19 +11,15 @@ class AdSlider extends React.Component {
         };
       }  
 
-      mvIndex = () => {
-        console.log(this)
-      };
-
-   
+      mvIndex = (v) =>{
+        this.setState({ adsdr: this.state.adsdrList[v] });
+      }
 
       Nextbtn = () => {
         const nextCard = this.state.adsdr.ASindex + 1;
-        if(this.state.adsdr.ASindex === this.state.adsdrList.length - 1){
-           this.setState({ onClick: null })
-        }else{
-           this.setState({ adsdr: this.state.adsdrList[nextCard] });
-        }
+        this.state.adsdr.ASindex === this.state.adsdrList.length - 1
+          ? this.setState({ onClick: null })
+          : this.setState({ adsdr: this.state.adsdrList[nextCard] });
       };
     
       Prevbtn = () => {
@@ -71,7 +66,7 @@ class AdSlider extends React.Component {
                                     <li key={AdSlideList.ASdot} 
                                         className="AdDot" 
                                         id={`AdDot-${AdSlideList.ASindex}`}
-                                        onClick={()=>this.mvIndex()}
+                                        onClick={()=>this.mvIndex(AdSlideList.ASindex)}
                                     >
                                         <i className="fas fa-circle"></i>
                                     </li>
