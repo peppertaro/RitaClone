@@ -85,44 +85,50 @@ const ProdTypeList = [
   const AdSlideList =[
     {
         ASkey: 901,
+        ASdot: 801,
         ASindex:0, 
         ASimg:"./img/sofa_n1.jpg", 
-        ASplace:"test", 
+        ASdsc:"ベッドALL50%OFF!!", 
         ASlink:"#NSofa"
     },
     {
         ASkey: 902,
+        ASdot: 802,        
         ASindex:1, 
         ASimg:"./img/tv_stand1.jpg", 
-        ASplace:"test", 
+        ASdsc:"ダイニング全品セール中！", 
         ASlink:"#TVStand"
     },
     {
         ASkey: 903,
+        ASdot: 903,        
         ASindex:2, 
         ASimg:"./img/shelf.jpg", 
-        ASplace:"Cabinet", 
+        ASdsc:"仲間と楽しいひと時を、自宅で。", 
         ASlink:"#Cabinet"
     },
     {
         ASkey: 904,
+        ASdot: 804,        
         ASindex:3, 
         ASimg:"./img/livingroom2.jpg", 
-        ASplace:"livingroom2", 
+        ASdsc:"心地よいリビングのある暮らし", 
         ASlink:"#livingroom2"
     },
     {
         ASkey: 905,
+        ASdot: 805,        
         ASindex:4, 
         ASimg:"./img/mirror.jpg", 
-        ASplace:"mirror", 
+        ASdsc:"ゆとりある空間でゆとりのある時間を。", 
         ASlink:"#mirror"
     },
     {
         ASkey: 906,
+        ASdot: 806,
         ASindex:5, 
         ASimg:"./img/dining1.jpg", 
-        ASplace:"dining1", 
+        ASdsc:"休日にくつろげるお部屋。", 
         ASlink:"#dining1"
     },
   ]

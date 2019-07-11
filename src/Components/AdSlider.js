@@ -29,36 +29,45 @@ class AdSlider extends React.Component {
         return ( 
             <div className="AdSlide-section">
                 <div className="container">
-                <h2 className="title">Your AdSlide places is here</h2>
-                <div className="AdSlides">
-                    <div className="AdSlide-box ">
-                    <button className="slider-btn" onClick={() => this.Prevbtn()}>
-                        <i className="fa fa-angle-left angle-i" />
-                    </button>
-                    <div
-                        className={`AScards-slider active-slide-${
-                        this.state.adsdr.ASindex
-                        }`}
-                    >
-                        <div
-                        className="card-slider-wrapper"
-                        style={{
-                            transform: `translateX(-${this.state.adsdr.ASindex *
-                            (100 / this.state.adsdrList.length)}%)`
-                        }}
-                        >
-                        {AdSlideList.map(AdSlideList => (
-                            <AdSlideBox 
-                                key={AdSlideList.ASkey} 
-                                AdSlideList={AdSlideList} />
-                        ))}
+                    <div className="AdSlides">
+                        <div className="AdSlide-box ">
+                            <button className="slider-btn" onClick={() => this.Prevbtn()}>
+                                <i className="fa fa-angle-left angle-i" />
+                            </button>
+                            <div
+                                className={`AScards-slider active-slide-${
+                                this.state.adsdr.ASindex
+                                }`}
+                            >
+                                <div
+                                className="card-slider-wrapper"
+                                style={{
+                                    transform: `translateX(-${this.state.adsdr.ASindex *
+                                    (100 / this.state.adsdrList.length)}%)`
+                                }}
+                                >
+                                {AdSlideList.map(AdSlideList => (
+                                    <AdSlideBox 
+                                        key={AdSlideList.ASkey} 
+                                        AdSlideList={AdSlideList} />
+                                ))}
+                                </div>
+                            </div>
+                            <button className="slider-btn" onClick={() => this.Nextbtn()}>
+                                <i className="fa fa-angle-right angle-i" />
+                            </button>
+                        </div>
+                        <div className="AdSlide-dots">
+                            <ul className="AdDot-Section">
+                                {AdSlideList.map(AdSlideList => (
+                                    <li key={AdSlideList.ASdot} className="AdDot" id={`AdDot-${AdSlideList.ASindex}`}><i className="fas fa-circle"></i></li>
+                                ))}
+                            </ul>
+                            <div className="AdDisplayToggle">
+                                表示切替<i className="fas fa-th menu-i"></i>
+                            </div>
                         </div>
                     </div>
-                    <button className="slider-btn" onClick={() => this.Nextbtn()}>
-                        <i className="fa fa-angle-right angle-i" />
-                    </button>
-                    </div>
-                </div>
                 </div>
             </div>
          );
