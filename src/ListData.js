@@ -78,7 +78,15 @@ const ProdTypeList = [
         PTname:"ラグ",
         PTtitle: "Rug",
         PTlink: "#rug"
-    }
+    },
+    {
+        PTkey: 111,
+        PTimg: "./svg/Mattress.svg",
+        PTindex: 10,
+        PTname:"マットレス",
+        PTtitle: "Mattress",
+        PTlink: "#mattress"
+    },
   ];
 
 
@@ -223,6 +231,15 @@ const ProdTypeList = [
         CTtitle: "Rug",
         PTlink: "#rug",
         CTimg: "./img/rug1.jpg"
+    },
+    {
+        PTkey: 411,
+        PTimg: "./svg/Mattress.svg",
+        PTindex: 10,
+        PTname:"マットレス",
+        PTtitle: "Mattress",
+        PTlink: "#mattress",
+        CTimg: "./img/mattress1.jpg"
     }
   ];
 

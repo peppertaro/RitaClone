@@ -10,7 +10,7 @@ class Category extends React.Component {
                         <h3 className="Title">CATEGORY</h3>
                         <p className="Title_JP">カテゴリー</p>
                     </div>
-                    <div className="CateTypes Slides">
+                    <div className="CateTypes">
                         {CategoryList.map(CategoryList => (
                             <CateTypeBox
                                 key={CategoryList.CTkey}

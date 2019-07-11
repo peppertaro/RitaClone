@@ -29,21 +29,21 @@ class App extends React.Component {
         <ProdType />
         <AdSlider />
         <div className="ad-side-section">
-          <img className="ad-side" src="./img/city-adS-1.jpg" alt="" />
           <div className="ad-side-wrapper">
-            <NewProd />
-            <Recommend />
-            <Category />
-            <MailMagazine />
             <div className="container">
+              <NewProd />
+              <Recommend />
+              <Category />
+              <MailMagazine />
               <div className="Corporations">
-                <Corporate />
-                <CorpCalendar />
-              </div>
+                  <Corporate />
+                  <CorpCalendar />
+                </div>
+              <CorpCustomer />
+              <Footer />
             </div>
-            <CorpCustomer />
-            <Footer />
           </div>
+          <img className="ad-side" src="./img/city-adS-1.jpg" alt="" />
         </div>
       </div>
     );
