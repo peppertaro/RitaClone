@@ -233,11 +233,11 @@ const ProdTypeList = [
         CTimg: "./img/rug1.jpg"
     },
     {
-        PTkey: 411,
+        CTkey: 411,
         PTimg: "./svg/Mattress.svg",
-        PTindex: 10,
-        PTname:"マットレス",
-        PTtitle: "Mattress",
+        CTindex: 10,
+        CTname:"マットレス",
+        CTtitle: "Mattress",
         PTlink: "#mattress",
         CTimg: "./img/mattress1.jpg"
     }

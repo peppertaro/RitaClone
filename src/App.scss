@@ -674,6 +674,9 @@ $i: 0;
     .ad-side{
       display:none;
     }
+    .CateType{
+      width:100%;
+    }
     .CT-img{
       width:33rem;
     }
@@ -689,9 +692,7 @@ $i: 0;
       font-size:1.5rem;
       font-weight:bold;
     }
-    .CateType{
-      width:100%;
-    }
+    
     .Slide-element{
       width:100%;
       text-align:center;
@@ -722,6 +723,9 @@ $i: 0;
       left:50%;
       z-index:5;
     }
+    .CateType{
+      width:percentage(1/2)
+    }
     .CT-infos{
       padding:2% 20%;
     }
@@ -735,9 +739,7 @@ $i: 0;
     .MM-img{
       opacity:.6;
     }
-    .CateType{
-      width:percentage(1/2)
-    }
+    
 
     .Slide-element{
       width:50%;
@@ -784,12 +786,13 @@ $i: 0;
     .CT-infos{
       padding:5% 20%;
     }
-    .CT-img{
-      width:20rem;
-    }
     .CateType{
       width:percentage(1/3)
     }
+    .CT-img{
+      width:20rem;
+    }
+    
     .Slide-element{
       width:25%;
       text-align:left;
