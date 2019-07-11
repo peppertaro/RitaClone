@@ -677,9 +677,6 @@ $i: 0;
     .CateType{
       width:100%;
     }
-    .CT-img{
-      width:33rem;
-    }
 
     .MM-infos{
       left:50%;
@@ -707,6 +704,9 @@ $i: 0;
     .f-index-box{
       width:percentage(1/3);
     }
+    .CT-img{
+      width:33rem;
+    }
   }
   
 @media (min-width: 768px) {
@@ -729,9 +729,7 @@ $i: 0;
     .CT-infos{
       padding:2% 20%;
     }
-    .CT-img{
-      width:23rem;
-    }
+    
     .corpTelNum{
       font-size:2rem;
       font-weight:600;
@@ -758,6 +756,9 @@ $i: 0;
     }
     .f-index-box{
       width:percentage(1/4);
+    }
+    .CT-img{
+      width:23rem;
     }
   }
 @media (min-width: 992px) {
@@ -789,9 +790,6 @@ $i: 0;
     .CateType{
       width:percentage(1/3)
     }
-    .CT-img{
-      width:20rem;
-    }
     
     .Slide-element{
       width:25%;
@@ -807,5 +805,8 @@ $i: 0;
     .CorpSection{
       width:50%;
       padding:1%;
+    }
+    .CT-img{
+      width:20rem;
     }
   }
