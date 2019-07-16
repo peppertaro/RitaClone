@@ -11,7 +11,7 @@ class Header extends React.Component {
                             <a className="h_item" href="https://my.bookmark.rakuten.co.jp/?l2-id=shop_header_bookmark" target="_blank" rel="noopener noreferrer"><i className="fas fa-heart hd-i"></i>MY FAVORITE</a>
                             <a className="h_item" href="https://basket.step.rakuten.co.jp/rms/mall/bs/cartempty/" target="_blank" rel="noopener noreferrer" ><i className="fas fa-shopping-basket hd-i"></i>SHOPPING BAG</a>
                         </div>
-                    </div>            
+                    </div>           
                 </div>
             </div>         );
     }

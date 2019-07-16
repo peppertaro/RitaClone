@@ -5,8 +5,8 @@ import CorpCalendar from './CorpCalendar';
 class CorpInfo extends React.Component {
     render() { 
         return ( 
-            <div className="Corporations">
-                <div className="container">
+            <div className="container">
+                <div className="Corporations">
                     <Corporate />
                     <CorpCalendar />
                 </div>
