@@ -130,7 +130,9 @@ svg {
   cursor: pointer;
 }
 
-
+.autoMv{
+  display:none;
+}
 
 /*----------imgTemplate------*/
 .Slides{
@@ -757,6 +759,10 @@ $i: 0;
     .container {
       max-width: 720px;
     }
+    .header{
+      font-size:1.2rem;
+    }
+
     .AdSlide-img{
       width: 650px;
     }

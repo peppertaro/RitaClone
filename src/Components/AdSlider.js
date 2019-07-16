@@ -37,7 +37,7 @@ class AdSlider extends React.Component {
     render() {  
         return ( 
             <div className="AdSlide-section">
-                {this.automv}
+                <div className="autoMv">{this.automv}</div> 
                 <div className="container">
                     <div className="AdSlides">
                         <div className="AdSlide-box ">
