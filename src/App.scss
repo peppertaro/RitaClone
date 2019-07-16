@@ -337,6 +337,7 @@ $i: 0;
 }
 
 .header-box{
+    position: relative;
     display:flex;
     justify-content:space-between;
     white-space: nowrap;
@@ -349,6 +350,14 @@ $i: 0;
 
 .hd-i{
     margin:.5rem 1rem;
+}
+
+.header_msg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
 }
 
 .h_item{
