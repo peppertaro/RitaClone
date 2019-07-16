@@ -10,6 +10,12 @@ class AdSlider extends React.Component {
           adsdr: AdSlideList[0]
         };
       }  
+      automv = setInterval(() => {
+        const nextCard = this.state.adsdr.ASindex + 1;
+        this.state.adsdr.ASindex === this.state.adsdrList.length - 1
+         ? this.setState({ adsdr: this.state.adsdrList[0] })
+         : this.setState({ adsdr: this.state.adsdrList[nextCard] });
+      }, 3000);
 
       mvIndex = (v) =>{
         this.setState({ adsdr: this.state.adsdrList[v] });
@@ -31,31 +37,22 @@ class AdSlider extends React.Component {
     render() {  
         return ( 
             <div className="AdSlide-section">
+                {this.automv}
                 <div className="container">
                     <div className="AdSlides">
                         <div className="AdSlide-box ">
                             <button className="slider-btn" onClick={() => this.Prevbtn()}>
                                 <i className="fa fa-angle-left angle-i" />
                             </button>
-                            <div
-                                className={`AScards-slider active-slide-${
-                                this.state.adsdr.ASindex
-                                }`}
-                            >
-                                <div
-                                className="card-slider-wrapper"
-                                style={{
-                                    transform: `translateX(-${this.state.adsdr.ASindex *
-                                    (100 / this.state.adsdrList.length)}%)`
-                                }}
-                                >
-                                {AdSlideList.map(AdSlideList => (
-                                    <AdSlideBox 
-                                        key={AdSlideList.ASkey} 
-                                        AdSlideList={AdSlideList} />
-                                ))}
+                                <div className={`AScards-slider active-slide-${this.state.adsdr.ASindex}`}>
+                                    <div className="card-slider-wrapper" style={{transform: `translateX(-${this.state.adsdr.ASindex *(100 / this.state.adsdrList.length)}%)`}}>
+                                        {AdSlideList.map(AdSlideList => (
+                                            <AdSlideBox 
+                                                key={AdSlideList.ASkey} 
+                                                AdSlideList={AdSlideList} />
+                                        ))}
+                                    </div>
                                 </div>
-                            </div>
                             <button className="slider-btn" onClick={() => this.Nextbtn()}>
                                 <i className="fa fa-angle-right angle-i" />
                             </button>

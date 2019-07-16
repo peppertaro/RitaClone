@@ -36,9 +36,9 @@ class App extends React.Component {
               <Category />
               <MailMagazine />
               <div className="Corporations">
-                  <Corporate />
-                  <CorpCalendar />
-                </div>
+                <Corporate />
+                <CorpCalendar />
+              </div>
               <CorpCustomer />
               <Footer />
             </div>
