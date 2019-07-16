@@ -1,6 +1,9 @@
 import React from 'react';
-
 class SearchBar extends React.Component {
+     RakuSub = ()=>{
+        document.charset='EUC-JP'; 
+        document.rakutenSubmit.submit();
+    }
     render() { 
         return ( 
             <div className="SearchBarSection">
@@ -10,8 +13,8 @@ class SearchBar extends React.Component {
                             <img className="Store-i" src="/logo.png" alt="" />
                         </a>
 
-                        <form method="get" className="SearchBar" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" target="_top" accept-charset="euc-jp">
-                            <button type="submit" name="sa" value="Search" className="search-i" onClick="document.charset='EUC-JP'; document.rakutenSubmit.submit();">
+                        <form method="get" className="SearchBar" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" target="_top" acceptCharset="euc-jp">
+                            <button type="submit" name="sa" value="Search" className="search-i" onClick="RakuSub()">
                                 <i className="fas fa-search"></i>
                             </button>
                             <input type="hidden" name="sv" value="6" />
