@@ -22,7 +22,7 @@ class Footer extends React.Component {
                         </div>
                         <div className="f-logo-i">
                             <a className="f-logo-link" href="https://www.rakuten.ne.jp/gold/ritainc/"  target="_blank" rel="noopener noreferrer">
-                                <img className="Store-i f-Store-i" src="/logo.png" alt="" />
+                                <img className="Store-i f-Store-i " src="/logo.png" alt="" />
                             </a>
                         </div>
                     </div>

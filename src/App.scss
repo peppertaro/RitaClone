@@ -497,7 +497,6 @@ $i: 0;
 
 .CateType{
   width:100%;
-  border:.1rem solid #aaaaaa;
 }
 
 .CT-img-box{
@@ -831,6 +830,7 @@ $i: 0;
     display:none;
   }
 
+  
   /*---MailMagazineAd---*/
   .MM-infos{
     left:50%;
@@ -1115,15 +1115,34 @@ $i: 0;
   }
   /*---SideAd---*/
   /*---Category---*/
+  .CateTypeSection{
+    display:block;
+  }
+  .CT-img-box{
+    display:flex;
+  }
   .CateType{
     width:percentage(1/2)
   }
   .CT-infos{
     padding:2% 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
   }
 
   .CT-plus{
     display:none;
+  }
+  .CT-img{
+    display:block;
+    margin: 0 auto;
+    width: 60%;
+    height: 16rem;
+    object-fit: cover;
   }
   /*---MailMagazineAd---*/
   .MM-infos{
@@ -1216,6 +1235,20 @@ $i: 0;
 .CateType{
   width:percentage(1/3)
 }
+.CTborder0,
+.CTborder2{
+  border-bottom:.1rem solid #aaaaaa;
+}
+.CTborder1{
+  border:.1rem solid #aaaaaa;
+  border-top:none;
+}
+
+#CateTypeBox-9,
+#CateTypeBox-10{
+  border-bottom:none;
+}
+
 .CT-infos{
   padding:5% 20%;
 }
