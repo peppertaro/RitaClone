@@ -12,7 +12,7 @@ const CateTypeBox = ({ CategoryList}) => {
         }
   };
   return (
-    <div id={`CateTypeBox-${CTindex}`} className={`CTborder${CTindex%3} CateType`} onClick={()=>{CTimgTogl(`CTimg-${CTindex}`)}}>
+    <div id={`CateTypeBox-${CTindex}`} className={`CT-L${CTindex%3} CT-M${CTindex%2} CateType`} onClick={()=>{CTimgTogl(`CTimg-${CTindex}`)}}>
         <div id={`CTcard-${CTindex}`} className="CT-img-box Slide-img-box">
             <div className="CT-infos">
                 <div className="CT-info">

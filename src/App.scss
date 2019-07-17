@@ -489,7 +489,7 @@ $i: 0;
 
 /*----------Category--------*/
 .CateTypes{
-  padding-top:5%;
+  margin-top:5%;
   display:flex;
   flex-wrap:wrap;
   width:100%;
@@ -829,7 +829,11 @@ $i: 0;
   .CateTypeSection{
     display:none;
   }
-
+  .CateType{
+    border:none;
+    border:.1rem solid #aaaaaa;
+    border-top:none;
+  }
   
   /*---MailMagazineAd---*/
   .MM-infos{
@@ -988,6 +992,11 @@ $i: 0;
   .CateTypeSection{
     display:none;
   }
+  .CateType{
+    border:none;
+    border:.1rem solid #aaaaaa;
+  }
+
   /*---MailMagazineAd---*/
   .MM-infos{
     left:50%;
@@ -1122,8 +1131,26 @@ $i: 0;
     display:flex;
   }
   .CateType{
-    width:percentage(1/2)
+    width:percentage(1/2);
+    border:none;
   }
+
+  .CT-M0{
+    border:.1rem solid #aaaaaa;
+    border-top:none;
+  }
+
+  .CT-M1{
+    border:.1rem solid #aaaaaa;
+    border-top:none;
+    border-left:none;
+  }
+
+  .CateTypes{
+    border-top:.1rem solid #aaaaaa;
+  }
+
+  
   .CT-infos{
     padding:2% 18%;
     display: flex;
@@ -1144,6 +1171,9 @@ $i: 0;
     height: 16rem;
     object-fit: cover;
   }
+
+
+  
   /*---MailMagazineAd---*/
   .MM-infos{
     left:50%;
@@ -1232,14 +1262,19 @@ $i: 0;
   display:none;
 }
 /*---Category---*/
+.CateTypes{
+  border:none;
+}
 .CateType{
   width:percentage(1/3)
 }
-.CTborder0,
-.CTborder2{
+.CT-L0,
+.CT-L2{
+  border:none;
   border-bottom:.1rem solid #aaaaaa;
 }
-.CTborder1{
+.CT-L1{
+  border:none;
   border:.1rem solid #aaaaaa;
   border-top:none;
 }
