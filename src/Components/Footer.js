@@ -20,9 +20,11 @@ class Footer extends React.Component {
                                 <a className="f-link" href="#about" alt="">会社概要</a>
                             </div>
                         </div>
-                        <a href="https://www.rakuten.ne.jp/gold/ritainc/"  target="_blank" rel="noopener noreferrer">
-                            <img className="Store-i" src="/logo.png" alt="" />
-                        </a>
+                        <div className="f-logo-i">
+                            <a href="https://www.rakuten.ne.jp/gold/ritainc/"  target="_blank" rel="noopener noreferrer">
+                                <img className="Store-i" src="/logo.png" alt="" />
+                            </a>
+                        </div>
                     </div>            
                 </div>
             </div>         );

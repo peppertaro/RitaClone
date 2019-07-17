@@ -58,7 +58,7 @@ class AdSlider extends React.Component {
                             </button>
                         </div>
                         <div className="AdSlide-dots">
-                            <ul className={`AdDot-Section active-slide-${this.state.adsdr.ASindex}`}>
+                            <ul id="AdDot-Section" className={`AdDot-Section active-slide-${this.state.adsdr.ASindex}`}>
                                 {AdSlideList.map(AdSlideList => (
                                     <li key={AdSlideList.ASdot} 
                                         className="AdDot" 
@@ -74,6 +74,7 @@ class AdSlider extends React.Component {
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
          );

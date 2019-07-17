@@ -1,6 +1,48 @@
 import React from 'react';
+import Modal from 'react-modal';
+import {ProdTypeList,CategoryList} from "../ListData";
+import ProdTypeBox from "../Templates/Prod_type_Box";
+import CateTypeBox from "../Templates/Cate_Type_Box";
+
+const customStyles = {
+    overlay: {
+      position: "relative",
+      zIndex: "100",
+      backgroundColor: "rgba(0, 0, 0, 0.5)"
+    },
+    content: {
+      width:"100%",
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      padding: 0,
+      transform: "translate(-50%, 0)"
+    }
+  };
+
+
 class SearchBar extends React.Component {
-     RakuSub = ()=>{
+    constructor(props) {
+        super(props);
+        this.state = {
+            modalIsOpen: false
+        };
+        this.toggle = this.toggle.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+    }
+
+    toggle() {
+        this.setState({
+            modalIsOpen: !this.state.modalIsOpen
+        });
+    } 
+    closeModal() {
+        this.setState({modalIsOpen: false});
+      }
+    
+    RakuSub = ()=>{
         document.charset='EUC-JP'; 
         document.rakutenSubmit.submit();
     }
@@ -9,7 +51,7 @@ class SearchBar extends React.Component {
             <div className="SearchBarSection">
                 <div className="container">
                     <div className="SearchBar-Box">
-                        <i className="fas fa-bars header-i"></i> 
+                        <i className="fas fa-bars header-i" onClick={this.toggle}></i> 
                         <a className="StoreLink"  href="https://www.rakuten.ne.jp/gold/ritainc/"  target="_blank" rel="noopener noreferrer">
                             <i className="fas fa-search search-i-sm"></i>
                         </a>
@@ -33,6 +75,33 @@ class SearchBar extends React.Component {
                             <input type="text" name="sitem" className="formtext" autoComplete="off" /> 
                             <input type="hidden" name="f" value="A"/>
                         </form>                            
+                    </div>
+                    <div className="ProdTypes">
+                        {ProdTypeList.map(ProdTypeList => (
+                            <ProdTypeBox
+                                key={ProdTypeList.PTkey}
+                                ProdTypeList={ProdTypeList}
+                            />
+                        ))}
+                    </div>
+                    
+                    <div id ="CTsmBox" className="Category-sm-box">
+                        <Modal
+                            isOpen={this.state.modalIsOpen}
+                            onRequestClose={this.closeModal}
+                            contentLabel="Category-sm"
+                            style={customStyles}
+                            parentSelector={() => document.getElementById("CTsmBox")}
+                        >
+                            <i className="fas fa-times-circle closeModal-i" onClick={this.closeModal}></i>
+                            {CategoryList.map(CategoryList => (
+                                    <CateTypeBox
+                                        key={CategoryList.CTkey}
+                                        CategoryList={CategoryList}
+                                    />
+                                ))}
+                                
+                        </Modal>
                     </div>
                 </div>
             </div>
