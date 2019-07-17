@@ -222,6 +222,7 @@ svg {
   justify-content:center;
   align-items: center;
   position:relative;
+  height:3rem;
 }
 .AdDot-Section{
   display:flex;
@@ -287,6 +288,23 @@ svg {
   transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
+/*------------AdList-----------*/
+.AdList-box{
+  flex-wrap:wrap;
+}
+.AdList-img-element{
+  margin:3% 0;
+}
+
+.AdList-img{
+  width:30vw;
+  height:20vh;
+  object-fit: cover;
+}
+
+.AdList-img-box{
+  position: relative;
+}
 
 $i: 0;
 @for $i from 0 through 6 {
@@ -413,7 +431,6 @@ $i: 0;
 /*---------ProductType---------*/
 .ProdTypes{
   display:flex;
-  flex-wrap:wrap;
   justify-content: space-around;
 }
 
@@ -479,7 +496,6 @@ $i: 0;
 }
 
 .CateType{
-  position: relative;
   width:100%;
   border:.1rem solid #aaaaaa;
 }
@@ -505,6 +521,7 @@ $i: 0;
 
 
 .CT-info{
+  position:relative;
   white-space:nowrap;
 }
 
@@ -577,6 +594,7 @@ $i: 0;
 .corpInfos{
   padding:1rem;
 }
+
 
 .corpInfo{
   padding:.5rem;
@@ -676,6 +694,7 @@ $i: 0;
 }
 
 .footer-box{
+  position:relative;
   display:flex;
 }
 
@@ -687,6 +706,9 @@ $i: 0;
   font-size:1.8rem;
   padding:3rem 0;
 }
+.f-links{
+  flex-wrap: wrap;
+}
 
 .f-link{
   color: #555;
@@ -696,6 +718,13 @@ $i: 0;
 }
 .f-link:hover{
   text-decoration: underline;
+}
+
+.f-logo-i{
+  position: absolute;
+  left:50%;
+  bottom:50%;
+  transform: translate(-50%,50%);
 }
 
 /*---------------Responsive-------------*/
@@ -721,7 +750,7 @@ $i: 0;
     height:30vh;
   }
   .AdSlides{ 
-    height:40vh;
+    height:45vh;
   }
   .AdSlide-box{
     height:30vh;
@@ -760,9 +789,6 @@ $i: 0;
     order:1;
     color:#000;
   }
-  .StoreLink{
-    order:2;
-  }
   .Store-i{
     height:12vh;
     width:30vw;
@@ -773,18 +799,21 @@ $i: 0;
   }
   .CT-infos{
     width:100%;
+    justify-content: space-between;
     flex-direction:row;
   }
   .CT-info{
-    width:100%;
     display:flex;
-    justify-content: space-between;
     align-items: center;
   }
   .CT-img{
     display:none;
+    width:100%;
+    height:20vh;
   }
-
+  .CT-link{
+    display:none;
+  }
   /*---ProductType---*/
   .ProdTypes{
     display:none;
@@ -857,7 +886,14 @@ $i: 0;
   }
   .f-logo-i{
     width:100%;
-    text-align:center;
+    position: relative;
+    height:10vh;
+  }
+  .f-Store-i{
+    position:absolute;
+    left:50%;
+    bottom:50%;
+    transform: translate(-50%,0)
   }
 }
 /**--------S-Devices----------**/
@@ -881,6 +917,18 @@ $i: 0;
   .AdSlide-img{
     width:470px;
   }
+  .AdSlides{ 
+    height:40vh;
+  }
+  .AdSlide-box{
+    height:30vh;
+  }
+
+  .AdSlide-dsc{
+    font-size:1.5rem;
+    white-space: nowrap;
+  }
+
   .AdDisplayToggle{
     display:none;
   }
@@ -901,12 +949,45 @@ $i: 0;
   .search-i-sm{
     display:block;
   }
+  .Store-i{
+    height:12vh;
+    width:30vw;
+  }
+  .CT-img-box{
+    display:block;
+  }
+  .CT-infos{
+    width:100%;
+    justify-content: space-between;
+    flex-direction:row;
+  }
+  .CT-info{
+    display:flex;
+    align-items: center;
+  }
+  .CT-img{
+    display:none;
+    width:100%;
+    height:20vh;
+  }
+  .CT-link{
+    display:none;
+  }
   /*---ProductType---*/
+   .ProdTypes{
+    display:none;
+  }
+  .Category-sm{
+    display:none;
+  }
   /*---SideAd---*/
   .ad-side{
     display:none;
   }
   /*---Category---*/
+  .CateTypeSection{
+    display:none;
+  }
   /*---MailMagazineAd---*/
   .MM-infos{
     left:50%;
@@ -919,16 +1000,51 @@ $i: 0;
     display:none;
   }
   /*---Corporate---*/
+ .InfoTitle{
+    font-size:1.3rem;
+  }
+  
+  .corpCalendars{
+    display:block;
+  }
+  .corpCalendar{
+    width:100%;
+  }
+  .CorpCustomer{
+    display:block;
+  }
+  .corpTelQuery{
+    border:none;
+    border-bottom:.2rem solid #eee;
+  }
   .corpTelNum{
     font-size:1.5rem;
     font-weight:bold;
   }
-  .CT-plus{
-    display:none;
+  .tel-i{
+    font-size:3rem;
   }
   /*---Footer---*/
+  .footer-box{
+    display:block;
+  }
   .f-index-box{
-    width:percentage(1/3);
+    width:100%;
+  }
+  .f-links{
+    display:flex;
+    white-space: nowrap;
+  }
+  .f-title{
+    padding:2rem 0;
+  }
+  .f-logo-box{
+    position:relative;
+    width:100%;
+  }
+  .f-logo-i{    
+    position: absolute;
+    text-align:center;
   }
 }
 /**--------Tablet---------**/
@@ -942,12 +1058,19 @@ $i: 0;
   /*---AdDots---*/
   .AdDisplayToggle{
     display:block;
-  }
+  } 
   /*---AdSlideCards---*/
+  .AdSlides{ 
+    height:40vh;
+  }
   .AdSlide-img{
     width: 650px;
+    height:30vh;
   }
 
+  .AdSlide-box{
+    height:30vh;
+  }
   .Slide-element{
     width:50%;
     text-align:center;
@@ -956,7 +1079,7 @@ $i: 0;
     text-align:center;
   }
   .Slide-img{
-    width:75%;
+    width: 100%;
     padding:1rem; 
   }
   .AdDisplayToggle{
@@ -987,6 +1110,9 @@ $i: 0;
   }
 
   /*---ProductType---*/
+  .ProdTypes{
+    display:flex;
+  }
   /*---SideAd---*/
   /*---Category---*/
   .CateType{
@@ -1015,13 +1141,36 @@ $i: 0;
     font-size:2rem;
     font-weight:600;
   }
+  .CorpCustomer{
+    display:flex;
+  }
+  .corpTelQuery{
+    width: 60%;
+    border:none;
+    border-right: .2rem solid #eee;
+  }
   .CorpSection{
     width:100%;
     padding:0 1%;
   }
+  .corpCalendars{
+    display:flex;
+  }
+  .corpCalendars{
+    width:50%;
+  }
   /*---Footer---*/
   .f-index-box{
     width:percentage(1/4);
+  }
+  .f-links{
+    display: block;
+  }
+  .footer-box{
+    display:flex;
+  }
+  .Store-i{
+    width:20rem;
   }
 }
 /**-----------PC------------**/
@@ -1046,6 +1195,13 @@ $i: 0;
 }
 .AdSlide-img{
   width: 1100px;
+  height:50vh;
+}
+.AdSlides{
+  height:60vh;
+}
+.AdSlide-box{
+  height:50vh;
 }
 /*---CorpTemplate---*/
 /*---TopAd---*/

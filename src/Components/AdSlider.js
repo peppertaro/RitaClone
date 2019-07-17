@@ -1,13 +1,19 @@
 import React from 'react';
 import {AdSlideList} from "../ListData";
 import AdSlideBox from "../Templates/Ad_Slide_Box";
+import AdListBox from "../Templates/Ad_List_Box";
+
 
 class AdSlider extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
           adsdrList: AdSlideList,
-          adsdr: AdSlideList[0]
+          adsdr: AdSlideList[0],
+          Slidedisplay: "flex",
+          ListDisplay:"none"
+          
+
         };
       }  
       automv = setInterval(() => {
@@ -17,6 +23,17 @@ class AdSlider extends React.Component {
          : this.setState({ adsdr: this.state.adsdrList[nextCard] });
       }, 3000);
 
+      AdToggle = () => {
+        if(this.state.Slidedisplay==="none"){
+            this.setState({Slidedisplay: "flex"})
+            this.setState({ListDisplay: "none"})
+        }else{
+            this.setState({Slidedisplay: "none"})
+            this.setState({ListDisplay: "flex"})
+        }
+      }
+
+      
       mvIndex = (v) =>{
         this.setState({ adsdr: this.state.adsdrList[v] });
       }
@@ -40,12 +57,12 @@ class AdSlider extends React.Component {
                 <div className="autoMv">{this.automv}</div> 
                 <div className="container">
                     <div className="AdSlides">
-                        <div className="AdSlide-box ">
+                        <div className="AdSlide-box AdBox" style={{ display: this.state.Slidedisplay}}>
                             <button className="slider-btn" onClick={() => this.Prevbtn()}>
                                 <i className="fa fa-angle-left angle-i" />
                             </button>
-                                <div className={`AScards-slider active-slide-${this.state.adsdr.ASindex}`}>
-                                    <div className="card-slider-wrapper" style={{transform: `translateX(-${this.state.adsdr.ASindex *(100 / this.state.adsdrList.length)}%)`}}>
+                                <div className={`AScards-slider active-slide-${this.state.adsdr.ASindex}`} >
+                                    <div className="card-slider-wrapper" style={{transform: `translateX(-${this.state.adsdr.ASindex *(100 / this.state.adsdrList.length)}%)`}} >
                                         {AdSlideList.map(AdSlideList => (
                                             <AdSlideBox 
                                                 key={AdSlideList.ASkey} 
@@ -57,8 +74,15 @@ class AdSlider extends React.Component {
                                 <i className="fa fa-angle-right angle-i" />
                             </button>
                         </div>
+                        <div className="AdList-box AdBox" style={{ display: this.state.ListDisplay}} >
+                            {AdSlideList.map(AdSlideList => (
+                                <AdListBox 
+                                    key={AdSlideList.ASkey} 
+                                    AdSlideList={AdSlideList} />
+                            ))}
+                        </div>
                         <div className="AdSlide-dots">
-                            <ul id="AdDot-Section" className={`AdDot-Section active-slide-${this.state.adsdr.ASindex}`}>
+                            <ul className={`AdDot-Section active-slide-${this.state.adsdr.ASindex}`}  style={{ display: this.state.Slidedisplay}}>
                                 {AdSlideList.map(AdSlideList => (
                                     <li key={AdSlideList.ASdot} 
                                         className="AdDot" 
@@ -69,7 +93,7 @@ class AdSlider extends React.Component {
                                     </li>
                                 ))}
                             </ul>
-                            <div className="AdDisplayToggle" >
+                            <div className="AdDisplayToggle" onClick={this.AdToggle}>
                                 表示切替<i className="fas fa-th menu-i"></i>
                             </div>
                         </div>

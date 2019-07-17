@@ -4,8 +4,15 @@ import React from "react";
 
 const CateTypeBox = ({ CategoryList}) => {
   const { CTindex, PTimg, CTname, CTtitle, CTlink,CTimg } = CategoryList;
+  const CTimgTogl = (v)=>{
+      if(document.getElementById(v).style.display!=="block"){
+            document.getElementById(v).style.display="block";
+        }else{
+            document.getElementById(v).style.display="none"
+        }
+  }
   return (
-    <div className="CateType">
+    <div className="CateType" onClick={()=>{CTimgTogl(`CTimg-${CTindex}`)}}>
         <div id={`CTcard-${CTindex}`} className="CT-img-box Slide-img-box">
             <div className="CT-infos">
                 <div className="CT-info">
@@ -13,17 +20,19 @@ const CateTypeBox = ({ CategoryList}) => {
                     <div className="CT-names">
                         <p className="CT-name">{CTname}</p>
                         <h3 className="CT-title">{CTtitle}</h3>
+                        <a href={CTlink} className="CT-link link-item">
+                            {CTlink}
+                        </a>
                     </div>
-                    <i className="fas fa-plus CT-plus"></i>
                 </div>
+                <i className="fas fa-plus CT-plus"></i>
             </div>
-            <img id={`CTimg-${CTindex}`} className="CT-img" src={CTimg} alt="" />
-            <a href={CTlink} className="CT-link link-item">
-                {CTlink}
-            </a>
+            <img id={`CTimg-${CTindex}`} className="CT-img" src={CTimg}  alt=""  />
+            
         </div>
         
     </div>
   );
 };
 export default CateTypeBox;
+
