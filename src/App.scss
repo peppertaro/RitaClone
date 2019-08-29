@@ -466,23 +466,11 @@ $i: 0;
 }
 
 /*----------SideAd----------*/
-.ad-side-section{
-  position:relative;
-  display:flex;
-  justify-content: center;
-}
-
-.ad-side-wrapper{
-  height:100%;
-}
-
 
 .ad-side{
-  display:none;
-  position: -webkit-sticky;
-  position: sticky;
+  position:fixed;
   top:5rem;
-  margin:21rem 2rem 0;
+  right:5rem;
   height:80rem;
 }
 
